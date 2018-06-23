@@ -1,0 +1,16 @@
+<network connections='3' ipv6='yes'>
+  <name>lab-vm</name>
+  <forward mode='nat'>
+    <nat>
+      <port start='1024' end='65535'/>
+    </nat>
+  </forward>
+  <bridge name='lab-br' stp='on' delay='0'/>
+  <mac address='52:54:00:bc:85:99'/>
+  <ip address='10.10.0.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='10.10.0.50' end='10.10.0.60'/>
+    </dhcp>
+  </ip>
+</network>
+
