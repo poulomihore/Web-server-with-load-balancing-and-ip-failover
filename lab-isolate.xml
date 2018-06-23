@@ -1,0 +1,7 @@
+<network connections='7'>
+  <name>lab-isolate</name>
+  <uuid>1f69b9fd-21f2-42d6-a490-a334d50339e8</uuid>
+  <bridge name='br-isolate' stp='on' delay='0'/>
+  <mac address='52:54:00:ff:c6:ec'/>
+</network>
+
