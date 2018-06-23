@@ -1,0 +1,12 @@
+<network connections='7' ipv6='yes'>
+  <name>vagrant-mgmt</name>
+  <uuid>0e104f3e-de84-449c-9a45-6b9f45ba474b</uuid>
+  <bridge name='virbr3' stp='on' delay='0'/>
+  <mac address='52:54:00:70:48:4f'/>
+  <ip address='172.16.100.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='172.16.100.1' end='172.16.100.254'/>
+    </dhcp>
+  </ip>
+</network>
+
