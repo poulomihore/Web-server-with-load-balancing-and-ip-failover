@@ -1,0 +1,15 @@
+$TTL 3H
+@       IN SOA  router.tux.lab. root.tux.lab. (
+                                        0       ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+        IN NS   router.tux.lab.
+router IN A 10.10.10.1
+box2 IN  A   10.10.10.2
+box3 IN  A   10.10.10.3
+centos5 IN  A   10.10.10.5
+centos6 IN  A   10.10.10.6
+centos7 IN  A   10.10.10.7
+www     IN  A   10.10.10.50
