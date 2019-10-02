@@ -9,7 +9,9 @@ The main aim of the project is to provide a web server as service to clients. Si
 - **Infrastructure**
 
 There is only one physical machine(running CentOS Linux 7) involved in the whole project. The rest of the infrastructure has been implemented using virtualization.  
+
 _Libvirt_,an open source API has been used for this purpose. It manages _KVM/QEMU_. Although used quite interchangibly, QEMU is a hypervisor/emulator whereas KVM is a special operating mode of QEMU that uses CPU extensions(HVM) for hardware acceleration, utilising CPU feauture in Intel VT-x or AMD SVM.  
+
 But instead of typing in the command for installing(using virsh) manually, which is not very efficient for an environmet which requires working with multiple VMs(virtual machines), the installation process has been automated using **_vagrant_**. Vagrant uses Virtual Box as its default hypervisor, but since we are using Linux, we have used Libvirt as its backend. The configuration of the _Vagrantfile_ and the network files(isolated or private network as well as NAT-enabled network, besides management network) have been uploaded in the commits. The commonly used commands in the vagrant environmet are listed:  
 ```
 mkdir tuxlab
